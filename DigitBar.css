@@ -1,0 +1,11 @@
+.digit-bar {
+  position: absolute;
+  clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
+}
+
+.digit-bar.digit-bar-off {
+  display: none;
+}
+.digit-bar.digit-bar-on {
+  display: block;
+}

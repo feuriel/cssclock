@@ -1,0 +1,17 @@
+{
+  "name": "clock",
+  "version": "1.0.0",
+  "description": "JS and CSS clock",
+  "keywords": [
+    "CSS",
+    "FUN",
+    "JS"
+  ],
+  "license": "ISC",
+  "author": "Gabriel Somogyi",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}

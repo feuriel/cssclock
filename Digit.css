@@ -1,0 +1,66 @@
+.digit {
+  --main-color: white;
+  --ref-size: 2rem;
+  background-color: var(--main-color);
+  height: calc(2 * var(--ref-size));
+  width: var(--ref-size);
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.digit * {
+  height: calc(var(--ref-size) / 4);
+  width: var(--ref-size);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(32, 121, 9, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+.digit :nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.digit :nth-child(2) {
+  top: 0;
+  left: 100%;
+  transform: rotateZ(90deg);
+  transform-origin: left;
+}
+
+.digit :nth-child(3) {
+  top: 50%;
+  left: 100%;
+  transform: rotateZ(90deg);
+  transform-origin: left;
+}
+
+.digit :nth-child(4) {
+  top: 100%;
+  left: 100%;
+  transform: rotateZ(180deg);
+  transform-origin: left;
+}
+
+.digit :nth-child(5) {
+  top: 100%;
+  left: 0;
+  transform: rotateZ(270deg);
+  transform-origin: left;
+}
+
+.digit :nth-child(6) {
+  top: 50%;
+  left: 0;
+  transform: rotateZ(270deg);
+  transform-origin: left;
+}
+
+.digit :nth-child(7) {
+  top: 50%;
+  left: 0;
+  clip-path: polygon(25% 0, 75% 0, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+}

@@ -1,0 +1,12 @@
+.digit-group {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.digit-group .digit {
+    display: inline-block;
+}
+
+.digit-group .digit:not(:last-child) {
+    margin-right:1rem;
+}
